@@ -10,6 +10,12 @@ for rendering the final screencast.
 Uses the [screencast4j](https://github.com/fracpete/screencast4j) library.
 
 
+Releases
+--------
+
+* [2016.1.3](https://github.com/fracpete/screencast4j-weka-package/releases/download/screencast4j-weka-package-2016.1.3/screencast4j-2016.1.3.zip)
+
+
 How to use packages
 -------------------
 
