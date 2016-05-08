@@ -21,12 +21,9 @@
 package weka.gui;
 
 import com.github.fracpete.screencast4j.gui.ScreencastPanel;
+import weka.gui.GUIChooser.GUIChooserMenuPlugin;
 
-import javax.swing.JFrame;
-import javax.swing.JInternalFrame;
-import java.awt.BorderLayout;
-import java.awt.Component;
-import java.awt.event.ActionListener;
+import javax.swing.JMenuBar;
 
 /**
  * Adds a "Screencast" menu item to the "Extensions" menu.
@@ -35,71 +32,48 @@ import java.awt.event.ActionListener;
  * @version $Revision$
  */
 public class Screencast4j
-  implements MainMenuExtension {
+  extends ScreencastPanel
+  implements GUIChooserMenuPlugin {
 
   /**
-   * Returns the name of the submenu. If there is no submenu necessary then
-   * the return value is null.
+   * Get the name to display in title bar of the enclosing JFrame for the
+   * plugin
    *
-   * @return		the title of the submenu or null if no submenu
+   * @return the name to display in the title bar
    */
   @Override
-  public String getSubmenuTitle() {
-    return null;
-  }
-
-  /**
-   * Returns the name of the menu item.
-   *
-   * @return		the name of the menu item.
-   */
-  @Override
-  public String getMenuTitle() {
+  public String getApplicationName() {
     return "Screencast";
   }
 
   /**
-   * If the extension has a custom ActionListener for the menu item, then it
-   * must be returned here. Having a custom <code>ActionListener</code> also
-   * means that the component handles any frame by itself.
+   * Get the menu that the plugin is to be listed in
    *
-   * @param owner 	the owner of potential dialogs
-   * @return		a custom ActionListener, can be null
-   * @see		#fillFrame(Component)
+   * @return the menu that the plugin is to be listed in
    */
   @Override
-  public ActionListener getActionListener(JFrame owner) {
-    return null;
+  public Menu getMenuToDisplayIn() {
+    return Menu.TOOLS;
   }
 
   /**
-   * Fills the frame with life, like adding components, window listeners,
-   * setting size, location, etc. The frame object can be either derived from
-   * <code>JFrame</code> or from <code>JInternalFrame</code>. This method is
-   * only called in case <code>getActionListener()</code> returns null.
+   * Get the text entry to appear in the menu
    *
-   * @param frame	the frame object to embed components, etc.
-   * @see		#getActionListener(JFrame)
-   * @see		javax.swing.JFrame
-   * @see		javax.swing.JInternalFrame
+   * @return the text entry to appear in the menu
    */
   @Override
-  public void fillFrame(Component frame) {
-    ScreencastPanel	panel;
+  public String getMenuEntryText() {
+    return "Screencast";
+  }
 
-    panel = new ScreencastPanel();
-    if (frame instanceof JFrame) {
-      ((JFrame) frame).getContentPane().setLayout(new BorderLayout());
-      ((JFrame) frame).getContentPane().add(panel, BorderLayout.CENTER);
-      ((JFrame) frame).setJMenuBar(panel.getMenuBar());
-      ((JFrame) frame).setSize(600, 400);
-      ((JFrame) frame).setLocationRelativeTo(null);
-    }
-    else {
-      ((JInternalFrame) frame).getContentPane().setLayout(new BorderLayout());
-      ((JInternalFrame) frame).getContentPane().add(panel, BorderLayout.CENTER);
-      ((JInternalFrame) frame).setJMenuBar(panel.getMenuBar());
-      ((JInternalFrame) frame).setSize(600, 400);
-    }
+  /**
+   * Return the menu bar for this plugin
+   *
+   * @return the menu bar for this plugin or null if it does not use a menu
+   *         bar
+   */
+  @Override
+  public JMenuBar getMenuBar() {
+    return null;
   }
 }
