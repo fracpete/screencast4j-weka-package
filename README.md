@@ -13,7 +13,8 @@ Uses the [screencast4j](https://github.com/fracpete/screencast4j) library.
 Releases
 --------
 
-* [2016.1.3](https://github.com/fracpete/screencast4j-weka-package/releases/download/screencast4j-weka-package-2016.1.3/screencast4j-2016.1.3.zip)
+* [2016.5.8](https://github.com/fracpete/screencast4j-weka-package/releases/download/v2016.5.8/screencast4j-2016.5.8.zip) (Weka >= 3.9.0)
+* [2016.1.3](https://github.com/fracpete/screencast4j-weka-package/releases/download/screencast4j-weka-package-2016.1.3/screencast4j-2016.1.3.zip) (Weka >= 3.7.12)
 
 
 How to use packages
