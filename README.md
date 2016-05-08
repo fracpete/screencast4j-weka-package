@@ -34,7 +34,7 @@ Add the following dependency in your `pom.xml` to include the package:
     <dependency>
       <groupId>com.github.fracpete</groupId>
       <artifactId>screencast4j-weka-package</artifactId>
-      <version>2016.1.3</version>
+      <version>2016.5.8</version>
       <type>jar</type>
       <exclusions>
         <exclusion>
