@@ -5,10 +5,10 @@
 PackageName=screencast4j
 
 # Version (required)
-Version=2016.5.8
+Version=2024.1.15
 
 #Date (year-month-day)
-Date=2016-05-08
+Date=2024-01-15
 
 # Title (required)
 Title=screencast4j
@@ -29,7 +29,7 @@ License=GPL 3.0
 Description=Allows recording of sound, webcam and screen to create screencasts, e.g., for YouTube.
 
 # Package URL for obtaining the package archive (required)
-PackageURL=https://github.com/fracpete/screencast4j-weka-package/releases/download/v2016.5.8/screencast4j-2016.5.8.zip
+PackageURL=https://github.com/fracpete/screencast4j-weka-package/releases/download/v2024.1.15/screencast4j-2024.1.15.zip
 
 # URL for further information
 URL=https://github.com/fracpete/screencast4j-weka-package
