@@ -5,7 +5,7 @@
 
   <groupId>com.github.fracpete</groupId>
   <artifactId>screencast4j-weka-package</artifactId>
-  <version>2024.1.15</version>
+  <version>2024.1.16-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>screencast4j</name>
@@ -36,7 +36,7 @@
     <connection>scm:git:ssh://git@github.com/fracpete/screencast4j-weka-package</connection>
     <developerConnection>scm:git:ssh://git@github.com/fracpete/screencast4j-weka-package</developerConnection>
     <url>https://github.com/fracpete/screencast4j-weka-package</url>
-    <tag>screencast4j-weka-package-2024.1.15</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <profiles>
