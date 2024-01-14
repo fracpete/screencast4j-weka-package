@@ -53,3 +53,5 @@ Maven
   git push
   ````
 
+* Update Weka package links
+* Update Maven artifact version
